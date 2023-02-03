@@ -1,0 +1,230 @@
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --accent-color: #4D5AE5;
+    --primary-white-color: #ffffff;  
+}
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+
+/*-------------Header-----------*/
+
+.page-header {}
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.site-nav {
+    list-style-type: none
+}
+
+.accent-color {
+    font-family: Raleway, sans-serif;
+    color: var(--accent-color);
+}
+
+.site-nav .link-nav {
+    font-weight: 500;
+    color: var(--title-text-color);
+    text-decoration: none;
+
+}
+
+.site-nav .link-nav:hover {
+    color: var(--primary-text-color);
+}
+
+.site-nav .link-nav:focus {
+    color: var(--accent-color)
+}
+
+.mail-tel-list {
+    list-style-type: none
+}
+
+
+.mail-tel .link-mail-tel{
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+}
+
+.mail-tel .link-mail-tel:hover {
+    color: var(--accent-color);
+}
+
+.mail-tel .link-mail-tel:focus {
+    color: var(--accent-color);
+}
+/*---------------Hero---------------*/
+
+.hero .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--primary-white-color);
+    text-align: center;
+    letter-spacing: 0.02em;
+    background-color: aliceblue;
+}
+
+.hero .hero-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-white-color);
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+}
+.hero .hero-btn:hover {
+    background: #4D5AE5;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.hero .hero-btn:focus {
+    background: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*--------------Features---------*/
+
+.features {}
+
+.features-list {
+    list-style-type: none
+}
+
+.features-item {}
+
+.features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--title-text-color);
+}
+
+.features-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*---------Doing--------------*/
+
+.doing-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--title-text-color);
+    
+}
+
+.doing-list {
+    list-style-type:none
+}
+
+/*------------Team-------------*/
+
+.team {}
+
+.team-title {
+    font-size: 36px;
+    line-height: 1.11; 
+    text-align: center; 
+    text-transform: capitalize;
+    color: var(--title-text-color);
+    
+}
+
+.team-list {
+    list-style-type: none
+}
+
+.team-item {
+   
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--title-text-color);
+}
+
+.team-text {
+    
+    color: var(--primary-text-color);
+}
+
+/*----------Footer-----------*/
+
+.footer-text {
+    color: #E7E9FC;
+    
+}
+
+/*----------------------Portfolio------------------------*/
+
+.filters-list {
+    list-style-type: none
+}
+
+.filter-btn {
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+color: var(--accent-color);
+cursor: pointer;
+background: #F4F4FD;
+border: 1px solid #E7E9FC;
+
+}
+
+.filter-btn:hover{
+color: var(--primary-white-color);
+background: #404BBF;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-btn:focus {
+    color: var(--primary-white-color);
+    background: #404BBF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cards-list {
+    list-style-type: none
+}
+
+.card-title {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+color: var(--title-text-color);
+}
+
+.card-text {
+    color: var(--primary-text-color);
+}
