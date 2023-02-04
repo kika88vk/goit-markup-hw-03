@@ -1,3 +1,12 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
     --primary-text-color: #434455;
     --title-text-color: #2E2F42;
@@ -9,11 +18,22 @@ body {
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     font-size: 16px;
+    margin: 0;
+}
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 2px solid tomato; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*-------------Header-----------*/
 
-.page-header {}
+.page-header {
+    border-bottom: 1px solid #E7E9FC;
+}
 
 .logo {
     font-family: Raleway, sans-serif;
@@ -70,13 +90,21 @@ body {
 }
 /*---------------Hero---------------*/
 
+.hero  {
+    background-color: var(--primary-text-color);
+    text-align: center;
+    /* width: 1158px; */
+}
+
 .hero .hero-title {
     font-size: 56px;
     line-height: 1.07;
     color: var(--primary-white-color);
-    text-align: center;
+    
     letter-spacing: 0.02em;
-    background-color: aliceblue;
+   
+    margin-top: 0;
+    margin-bottom: 48;
 }
 
 .hero .hero-btn {
@@ -85,12 +113,19 @@ body {
     font-size: 16px;
     line-height: 1.5;
     cursor: pointer;
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     letter-spacing: 0.04em;
     color: var(--primary-white-color);
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+   
     
 }
 .hero .hero-btn:hover {
@@ -105,10 +140,20 @@ body {
 
 /*--------------Features---------*/
 
-.features {}
+.features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+}
+
+.feature-main-title {
+    margin: 0;
+}
 
 .features-list {
-    list-style-type: none
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .features-item {}
@@ -118,14 +163,22 @@ body {
     font-size: 20px;
     line-height: 1.2;
     color: var(--title-text-color);
+    margin-bottom: 8px;
+    margin-top: 0;
 }
 
 .features-text {
     font-size: 16px;
     line-height: 1.5;
+    margin: 0;
 }
 
 /*---------Doing--------------*/
+
+.doing {
+    /* width: 1158px;; */
+    padding-bottom: 120px;
+}
 
 .doing-title {
     font-size: 36px;
@@ -142,7 +195,10 @@ body {
 
 /*------------Team-------------*/
 
-.team {}
+.team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .team-title {
     font-size: 36px;
@@ -175,6 +231,16 @@ body {
 
 /*----------Footer-----------*/
 
+.footer {
+padding-top: 100px;
+padding-bottom: 100px;
+background-color: var(--primary-text-color);
+}
+
+.white-logo {
+    color: #F4F4FD;
+}
+
 .footer-text {
     color: #E7E9FC;
     
@@ -182,8 +248,16 @@ body {
 
 /*----------------------Portfolio------------------------*/
 
+.filter-title {
+color: transparent;
+margin: 0;
+/* background-color:#E7E9FC; */
+}
+
 .filters-list {
-    list-style-type: none
+    list-style-type: none;
+    margin-bottom: 72px;
+    margin-top: 96px;
 }
 
 .filter-btn {
@@ -215,7 +289,9 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
 }
 
 .cards-list {
-    list-style-type: none
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 120px;
 }
 
 .card-title {
