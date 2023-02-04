@@ -33,6 +33,21 @@ body {
 
 .page-header {
     border-bottom: 1px solid #E7E9FC;
+   
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    
 }
 
 .logo {
@@ -44,10 +59,15 @@ body {
     color: inherit;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .site-nav {
-    list-style-type: none
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    gap: 40px;
 }
 
 .accent-color {
@@ -71,7 +91,9 @@ body {
 }
 
 .mail-tel-list {
-    list-style-type: none
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
 }
 
 
@@ -94,17 +116,20 @@ body {
     background-color: var(--primary-text-color);
     text-align: center;
     /* width: 1158px; */
+    height: 600px;
 }
 
-.hero .hero-title {
+.hero-title {
     font-size: 56px;
     line-height: 1.07;
     color: var(--primary-white-color);
-    
     letter-spacing: 0.02em;
-   
     margin-top: 0;
     margin-bottom: 48;
+    /* width: 494px; */
+    /* height: 120px; */
+    text-align: center;
+    padding-top: 188px;
 }
 
 .hero .hero-btn {
@@ -154,6 +179,9 @@ body {
     list-style-type: none;
     margin-bottom: 0;
     margin-top: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .features-item {}
@@ -171,6 +199,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
+    width: 264px;
 }
 
 /*---------Doing--------------*/
@@ -178,6 +207,7 @@ body {
 .doing {
     /* width: 1158px;; */
     padding-bottom: 120px;
+    
 }
 
 .doing-title {
@@ -186,11 +216,17 @@ body {
     text-align: center;
     text-transform: capitalize;
     color: var(--title-text-color);
+    margin: 0;
+    margin-bottom: 72px;
     
 }
 
 .doing-list {
-    list-style-type:none
+    list-style-type:none;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 /*------------Team-------------*/
@@ -198,6 +234,7 @@ body {
 .team {
     padding-top: 120px;
     padding-bottom: 120px;
+    background-color: #F4F4FD;
 }
 
 .team-title {
@@ -206,15 +243,24 @@ body {
     text-align: center; 
     text-transform: capitalize;
     color: var(--title-text-color);
+    margin-bottom: 72px;
+    margin-top: 0;
     
 }
 
 .team-list {
-    list-style-type: none
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .team-item {
-   
+   background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
 }
 
 .team-name {
@@ -222,11 +268,16 @@ body {
     font-size: 20px;
     line-height: 1.2;
     color: var(--title-text-color);
+    margin-bottom: 8px;
+    margin-top: 0;
+    padding-top: 32px;
 }
 
 .team-text {
     
     color: var(--primary-text-color);
+    margin: 0;
+    padding-bottom: 32px;
 }
 
 /*----------Footer-----------*/
@@ -243,10 +294,17 @@ background-color: var(--primary-text-color);
 
 .footer-text {
     color: #E7E9FC;
+    width: 264px;
+    margin-bottom: 0;
     
 }
 
 /*----------------------Portfolio------------------------*/
+
+.filters-n-cards{
+padding-bottom: 120px;
+padding-top: 96px;
+}
 
 .filter-title {
 color: transparent;
@@ -257,7 +315,11 @@ margin: 0;
 .filters-list {
     list-style-type: none;
     margin-bottom: 72px;
-    margin-top: 96px;
+    margin-top: 0;
+    padding-left: 0;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
 }
 
 .filter-btn {
@@ -290,8 +352,23 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
 
 .cards-list {
     list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 120px;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card-item {
+    background-color: #fff;
+    
+    
+}
+
+.card-item-info{
+border-bottom: 1px solid #E7E9FC;
+border-left: 1px solid #E7E9FC;
+border-right: 1px solid #E7E9FC;
 }
 
 .card-title {
@@ -299,8 +376,15 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 color: var(--title-text-color);
+padding-top: 32px;
+padding-bottom: 8px;
+padding-left: 16px;
+margin: 0;
 }
 
 .card-text {
     color: var(--primary-text-color);
+    margin: 0;
+    padding-left: 16px;
+    padding-bottom: 32px;
 }
