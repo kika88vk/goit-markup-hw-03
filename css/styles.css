@@ -64,7 +64,8 @@ body {
 
 .site-nav {
     list-style-type: none;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
     display: flex;
     gap: 40px;
@@ -94,6 +95,9 @@ body {
     list-style-type: none;
     display: flex;
     gap: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 
@@ -116,7 +120,9 @@ body {
     background-color: var(--primary-text-color);
     text-align: center;
     /* width: 1158px; */
-    height: 600px;
+    /* height: 600px; */
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -129,7 +135,7 @@ body {
     /* width: 494px; */
     /* height: 120px; */
     text-align: center;
-    padding-top: 188px;
+    
 }
 
 .hero .hero-btn {
@@ -227,6 +233,7 @@ body {
     margin-bottom: 0;
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
 }
 
 /*------------Team-------------*/
@@ -254,6 +261,7 @@ body {
     justify-content: space-between;
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 .team-item {
@@ -293,6 +301,9 @@ background-color: var(--primary-text-color);
 }
 
 .footer-text {
+    font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     color: #E7E9FC;
     width: 264px;
     margin-bottom: 0;
@@ -335,7 +346,8 @@ color: var(--accent-color);
 cursor: pointer;
 background: #F4F4FD;
 border: 1px solid #E7E9FC;
-
+border-radius: 4px;
+padding: 12px 24px;
 }
 
 .filter-btn:hover{
@@ -369,22 +381,22 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
 border-bottom: 1px solid #E7E9FC;
 border-left: 1px solid #E7E9FC;
 border-right: 1px solid #E7E9FC;
+padding-top: 32px;
+padding-bottom: 32px;
+padding-left: 16px;
 }
 
-.card-title {
+.card-item-info .card-title {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 color: var(--title-text-color);
-padding-top: 32px;
-padding-bottom: 8px;
-padding-left: 16px;
-margin: 0;
+margin-bottom: 8px;
+margin-top: 0;
 }
 
 .card-text {
     color: var(--primary-text-color);
     margin: 0;
-    padding-left: 16px;
-    padding-bottom: 32px;
+    
 }
